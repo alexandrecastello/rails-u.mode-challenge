@@ -5,7 +5,7 @@ filepath = 'cores.json'
 serialized_colors = File.read(filepath)
 json_hash = JSON.parse(serialized_colors)
 
-#TABLE INPUS
+#TABLE INPUT
 json_hash['value'].each do |color| 
   new_color = Color.new
   new_color.name = color["descricao"]
